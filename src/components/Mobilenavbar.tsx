@@ -38,7 +38,7 @@ const Mobilenavbar: React.FC = () => {
       {/* Drawer Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-40"
+          className="fixed inset-0 bg-[#ffffff00] bg-opacity-40 z-40"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
