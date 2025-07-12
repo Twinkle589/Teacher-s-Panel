@@ -10,6 +10,7 @@ import Attendance from "./pages/Attendance";
 import Timetable from "./pages/Timetable";
 import SingleTeacher from "./pages/Singleteacher";
 import Scheduleexam from "./pages/Scheduleexam";
+import Addstudent from "./pages/Addstudents";
 // Future pages
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/exams" element={<Exams />} />
           <Route path="/scheduleexam" element={<Scheduleexam />} />
+          <Route path="/addstudent" element={<Addstudent />} />
 
         </Routes>
       </DashboardLayout>

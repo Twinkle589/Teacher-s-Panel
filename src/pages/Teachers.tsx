@@ -25,9 +25,9 @@ const Teachers = () => {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-[#FFA585]">Teachers</h1>
-        <button className="bg-[#FFA585] text-white px-4 py-2 rounded-lg hover:bg-[#ff9468] transition">
+        {/* <button className="bg-[#FFA585] text-white px-4 py-2 rounded-lg hover:bg-[#ff9468] transition">
           + Add Teacher
-        </button>
+        </button> */}
       </div>
 
       <div className="bg-white p-6 rounded-xl shadow-md border border-orange-100">
