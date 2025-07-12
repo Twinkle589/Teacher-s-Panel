@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Sidebar from "../components/SideBar";
+import Mobilenavbar from "../components/Mobilenavbar";
 
 type DashboardLayoutProps = {
   children: ReactNode;
@@ -7,9 +8,15 @@ type DashboardLayoutProps = {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
-    <div className="flex">
+    <div className="flex flex-col sm:flex-row min-h-screen bg-[#FFF9F3]">
+      {/* Sidebar visible on sm and above */}
       <Sidebar />
-      <main className="ml-64 w-full bg-[#FFF9F3] min-h-screen p-6">
+
+      {/* Mobile nav visible only on small screens */}
+      <Mobilenavbar />
+
+      {/* Main content */}
+      <main className="flex-1 sm:ml-64 mt-14 sm:mt-0 p-4">
         {children}
       </main>
     </div>

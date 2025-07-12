@@ -10,7 +10,6 @@ import {
   FaFileAlt,
 } from "react-icons/fa";
 
-// Define the shape of a navigation item
 type NavItem = {
   label: string;
   path: string;
@@ -29,7 +28,7 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#FFA585] text-white w-64 h-screen fixed top-0 left-0 p-6 shadow-lg">
+<div className="hidden sm:block bg-[#FFA585] text-white w-64 h-screen fixed top-0 left-0 p-6 shadow-lg">
       <h2 className="text-2xl font-bold mb-10">Teacher Panel</h2>
       <nav className="flex flex-col space-y-4">
         {navItems.map((item, i) => (
